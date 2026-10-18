@@ -1,0 +1,207 @@
+@font-face {
+    font-family: rockstar;
+    src: url(./NewRocker-Regular.ttf);
+}
+
+@font-face {
+    font-family: bug;
+    src: url(./Boogaloo-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+main{
+    height: 100%;
+    width: 100%;
+    background-color: #2d2732;
+}
+
+.section1{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(2, 25, 26);
+    background-image: linear-gradient(rgba(0,0,0,0.5)), url("./Sunset.png");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+    clip-path: ellipse(100% 100% at 50% 0%);
+}
+
+nav{
+    height: 10%;
+    width: 100%;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 100px;
+    
+}
+
+nav .part1{
+    display: flex;
+    position: relative;
+    left: -2%;
+}
+
+
+nav .part1 img{
+    height: 20px;
+}
+
+nav .part1 img:hover{
+    transform: scale(1.5);
+}
+
+.section1 .part2{
+    display: flex;
+    gap: 40px;
+    width: fit-content;
+    justify-content: center;
+    position: relative;
+    left: -2%;
+}
+
+.section1 .part2 a{
+    text-decoration: none;
+    color: white;
+    opacity: 0.9;
+}
+
+.section1 .part2 a:hover{
+    text-decoration: underline;
+}
+
+.section1 .part3{
+    height: 100%;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    position: relative;
+    left: 3%;
+}
+
+.section1 .part3 img{
+    width: fit-content;
+    filter: brightness(0) invert(1);
+    height: 30px;
+}
+
+.section1 .part3 img:hover{
+    cursor: pointer;
+    opacity: 0.5;
+}
+
+.section1 .part3 img:first-child{
+    height: 26px;
+}
+
+.village{
+    height: 30%;
+    width: 100%;
+    margin-top: 150px;
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+
+.village .div1{
+    width: fit-content;
+}
+
+.village .div1 h1{
+    font-size: 100px;
+    font-family: rockstar;
+}
+
+.village .div1>h4{
+    font-weight: 500;
+    position: relative;
+    left: -10%;
+}
+
+.right-text{
+    height: fit-content;
+    width: 100%;
+    text-align: end;
+
+}
+
+.right-text h4{
+    font-weight: 500;
+    z-index: 2;
+    position: relative;
+    left: 10%;
+}
+
+.section1>img{
+    height: 500px;
+    position: absolute;
+    left: 34%;
+    top: 48%;
+}
+
+.section2{
+    height: fit-content;
+    width: 100%;
+    background-color: #2d2732;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.section2 .div1{
+    height: 15%;
+    width: 50%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section2 h1{
+    color: white;
+    font-size: 50px;
+    font-family: bug;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.section2 .lining{
+    height: 3px;
+    width: 130%;
+    background-color: white;
+    opacity: 0.7;
+}
+
+.section2 .div2{
+    height: fit-content;
+    width: 65%;
+    display: flex;
+    gap: 60px;
+    color: white;
+    font-size: 13px;
+    font-weight: 100;
+    word-spacing: 5px;
+    margin-bottom: 30px;
+    margin-top: 10px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.section2 .div2 p:nth-child(2){
+    position: relative;
+    left: 1.3%;
+}
